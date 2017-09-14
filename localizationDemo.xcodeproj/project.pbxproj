@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		8F99CC311F6A48E2003F947F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F99CC301F6A48E2003F947F /* AppDelegate.swift */; };
-		8F99CC331F6A48E2003F947F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F99CC321F6A48E2003F947F /* ViewController.swift */; };
 		8F99CC361F6A48E2003F947F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F99CC341F6A48E2003F947F /* Main.storyboard */; };
 		8F99CC381F6A48E2003F947F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F99CC371F6A48E2003F947F /* Assets.xcassets */; };
 		8F99CC3B1F6A48E2003F947F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F99CC391F6A48E2003F947F /* LaunchScreen.storyboard */; };
 		8F99CC461F6A48E2003F947F /* localizationDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F99CC451F6A48E2003F947F /* localizationDemoTests.swift */; };
 		8F99CC511F6A48E2003F947F /* localizationDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F99CC501F6A48E2003F947F /* localizationDemoUITests.swift */; };
+		8F99CC5F1F6A4A57003F947F /* Item1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F99CC5E1F6A4A57003F947F /* Item1ViewController.swift */; };
+		8F99CC611F6A4A66003F947F /* Item2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F99CC601F6A4A66003F947F /* Item2ViewController.swift */; };
+		8F99CC751F6A4BD8003F947F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F99CC771F6A4BD8003F947F /* Localizable.strings */; };
+		8F99CCB21F6A5B9F003F947F /* PPLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F99CCB11F6A5B9F003F947F /* PPLabel.swift */; };
+		8F99CCB41F6A5DB7003F947F /* PPLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F99CCB31F6A5DB7003F947F /* PPLocalization.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 /* Begin PBXFileReference section */
 		8F99CC2D1F6A48E1003F947F /* localizationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = localizationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F99CC301F6A48E2003F947F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8F99CC321F6A48E2003F947F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8F99CC351F6A48E2003F947F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F99CC371F6A48E2003F947F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F99CC3A1F6A48E2003F947F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,14 @@
 		8F99CC4C1F6A48E2003F947F /* localizationDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = localizationDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F99CC501F6A48E2003F947F /* localizationDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = localizationDemoUITests.swift; sourceTree = "<group>"; };
 		8F99CC521F6A48E2003F947F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F99CC5E1F6A4A57003F947F /* Item1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item1ViewController.swift; sourceTree = "<group>"; };
+		8F99CC601F6A4A66003F947F /* Item2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item2ViewController.swift; sourceTree = "<group>"; };
+		8F99CC761F6A4BD8003F947F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8F99CC781F6A4BD9003F947F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8F99CC791F6A4BED003F947F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8F99CCAE1F6A584A003F947F /* localizationDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "localizationDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		8F99CCB11F6A5B9F003F947F /* PPLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPLabel.swift; sourceTree = "<group>"; };
+		8F99CCB31F6A5DB7003F947F /* PPLocalization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPLocalization.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +108,15 @@
 		8F99CC2F1F6A48E1003F947F /* localizationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8F99CCAA1F6A57B3003F947F /* LanguageUtilities */,
 				8F99CC301F6A48E2003F947F /* AppDelegate.swift */,
-				8F99CC321F6A48E2003F947F /* ViewController.swift */,
 				8F99CC341F6A48E2003F947F /* Main.storyboard */,
 				8F99CC371F6A48E2003F947F /* Assets.xcassets */,
 				8F99CC391F6A48E2003F947F /* LaunchScreen.storyboard */,
 				8F99CC3C1F6A48E2003F947F /* Info.plist */,
+				8F99CC5E1F6A4A57003F947F /* Item1ViewController.swift */,
+				8F99CC601F6A4A66003F947F /* Item2ViewController.swift */,
+				8F99CCAE1F6A584A003F947F /* localizationDemo-Bridging-Header.h */,
 			);
 			path = localizationDemo;
 			sourceTree = "<group>";
@@ -123,6 +137,16 @@
 				8F99CC521F6A48E2003F947F /* Info.plist */,
 			);
 			path = localizationDemoUITests;
+			sourceTree = "<group>";
+		};
+		8F99CCAA1F6A57B3003F947F /* LanguageUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				8F99CC771F6A4BD8003F947F /* Localizable.strings */,
+				8F99CCB11F6A5B9F003F947F /* PPLabel.swift */,
+				8F99CCB31F6A5DB7003F947F /* PPLocalization.swift */,
+			);
+			path = LanguageUtilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +241,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 8F99CC241F6A48E1003F947F;
 			productRefGroup = 8F99CC2E1F6A48E1003F947F /* Products */;
@@ -236,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F99CC3B1F6A48E2003F947F /* LaunchScreen.storyboard in Resources */,
+				8F99CC751F6A4BD8003F947F /* Localizable.strings in Resources */,
 				8F99CC381F6A48E2003F947F /* Assets.xcassets in Resources */,
 				8F99CC361F6A48E2003F947F /* Main.storyboard in Resources */,
 			);
@@ -262,7 +288,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F99CC331F6A48E2003F947F /* ViewController.swift in Sources */,
+				8F99CC611F6A4A66003F947F /* Item2ViewController.swift in Sources */,
+				8F99CCB41F6A5DB7003F947F /* PPLocalization.swift in Sources */,
+				8F99CC5F1F6A4A57003F947F /* Item1ViewController.swift in Sources */,
+				8F99CCB21F6A5B9F003F947F /* PPLabel.swift in Sources */,
 				8F99CC311F6A48E2003F947F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +344,17 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		8F99CC771F6A4BD8003F947F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F99CC761F6A4BD8003F947F /* Base */,
+				8F99CC781F6A4BD9003F947F /* en */,
+				8F99CC791F6A4BED003F947F /* ar */,
+			);
+			name = Localizable.strings;
+			path = ..;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -322,6 +362,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -373,6 +414,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -422,6 +464,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.webmyne.localizationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/prashant/Desktop/localizationDemo/localizationDemo/localizationDemo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -435,6 +478,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.webmyne.localizationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/prashant/Desktop/localizationDemo/localizationDemo/localizationDemo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -516,6 +560,7 @@
 				8F99CC571F6A48E2003F947F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F99CC581F6A48E2003F947F /* Build configuration list for PBXNativeTarget "localizationDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +569,7 @@
 				8F99CC5A1F6A48E2003F947F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F99CC5B1F6A48E2003F947F /* Build configuration list for PBXNativeTarget "localizationDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +578,7 @@
 				8F99CC5D1F6A48E2003F947F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

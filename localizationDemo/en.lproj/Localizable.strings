@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  localizationDemo
+
+  Created by Prashant Prajapati on 14/09/17.
+  Copyright © 2017 Prashant Prajapati. All rights reserved.
+*/
+"next" = "next";
+"hello" = "hello";
