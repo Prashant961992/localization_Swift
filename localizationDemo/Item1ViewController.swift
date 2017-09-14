@@ -24,22 +24,23 @@ class Item1ViewController: UIViewController {
     
     @IBAction func actionArabic(_ sender: Any) {
         PPLocalization.sharedInstance.setLanguage(language: "ar")
-        let semantic: UISemanticContentAttribute = .forceRightToLeft
-        // sender.isOn ? .forceRightToLeft : .forceLeftToRight
-        UITabBar.appearance().semanticContentAttribute = semantic
-        UIView.appearance().semanticContentAttribute = semantic
-        UINavigationBar.appearance().semanticContentAttribute = semantic
+//        let semantic: UISemanticContentAttribute = .forceRightToLeft
+//        // sender.isOn ? .forceRightToLeft : .forceLeftToRight
+//        UITabBar.appearance().semanticContentAttribute = semantic
+//        UIView.appearance().semanticContentAttribute = semantic
+//        UINavigationBar.appearance().semanticContentAttribute = semantic
         appDelegate.initrootView()
     }
 
     @IBAction func actionenglish(_ sender: Any) {
-        let semantic: UISemanticContentAttribute = .forceLeftToRight
-        // sender.isOn ? .forceRightToLeft : .forceLeftToRight
-        PPLocalization.sharedInstance.setLanguage(language: "en")
-        
-        UIView.appearance().semanticContentAttribute = semantic
-        UITabBar.appearance().semanticContentAttribute = semantic
-        UINavigationBar.appearance().semanticContentAttribute = semantic
+         PPLocalization.sharedInstance.setLanguage(language: "en")
+//        let semantic: UISemanticContentAttribute = .forceLeftToRight
+//        // sender.isOn ? .forceRightToLeft : .forceLeftToRight
+//        PPLocalization.sharedInstance.setLanguage(language: "en")
+//        
+//        UIView.appearance().semanticContentAttribute = semantic
+//        UITabBar.appearance().semanticContentAttribute = semantic
+//        UINavigationBar.appearance().semanticContentAttribute = semantic
         appDelegate.initrootView()
     }
 }

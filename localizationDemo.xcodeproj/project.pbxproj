@@ -20,6 +20,7 @@
 		8F99CCB41F6A5DB7003F947F /* PPLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F99CCB31F6A5DB7003F947F /* PPLocalization.swift */; };
 		8FAA37CB1F6A7E0A00907C98 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAA37CA1F6A7E0A00907C98 /* MainTabBarController.swift */; };
 		8FAA37CD1F6A80FD00907C98 /* PPButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAA37CC1F6A80FD00907C98 /* PPButton.swift */; };
+		8FAA38331F6A8CA400907C98 /* DT_Icons.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FAA38321F6A8CA400907C98 /* DT_Icons.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		8F99CCB31F6A5DB7003F947F /* PPLocalization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPLocalization.swift; sourceTree = "<group>"; };
 		8FAA37CA1F6A7E0A00907C98 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		8FAA37CC1F6A80FD00907C98 /* PPButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPButton.swift; sourceTree = "<group>"; };
+		8FAA38321F6A8CA400907C98 /* DT_Icons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DT_Icons.png; path = LanguageUtilities/DT_Icons.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				8F99CCAE1F6A584A003F947F /* localizationDemo-Bridging-Header.h */,
 				8F99CCAA1F6A57B3003F947F /* LanguageUtilities */,
 				8F99CC301F6A48E2003F947F /* AppDelegate.swift */,
+				8FAA38321F6A8CA400907C98 /* DT_Icons.png */,
 				8F99CC341F6A48E2003F947F /* Main.storyboard */,
 				8F99CC371F6A48E2003F947F /* Assets.xcassets */,
 				8F99CC391F6A48E2003F947F /* LaunchScreen.storyboard */,
@@ -270,6 +273,7 @@
 				8F99CC751F6A4BD8003F947F /* Localizable.strings in Resources */,
 				8F99CC381F6A48E2003F947F /* Assets.xcassets in Resources */,
 				8F99CC361F6A48E2003F947F /* Main.storyboard in Resources */,
+				8FAA38331F6A8CA400907C98 /* DT_Icons.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

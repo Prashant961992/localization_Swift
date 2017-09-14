@@ -21,8 +21,11 @@ class PPLocalization: NSObject {
     func getlanguageDirection() -> LanguageDirection {
         if languageDirection?.rawValue == 0 {
             return .leftToRight
+        }else if getLanguage() == "ar" {
+            return .rightToLeft
+        }else{
+            return .leftToRight
         }
-        return languageDirection!
     }
     
     func localizedString(forKey key: String, value comment: String) -> String {
@@ -37,12 +40,6 @@ class PPLocalization: NSObject {
         }
         UserDefaults.standard.set(l, forKey: "kLanguage")
         UserDefaults.standard.synchronize()
-        if (language == "ar-BH") {
-            languageDirection = .rightToLeft
-        }
-        else {
-            languageDirection = .leftToRight
-        }
         let path: String? = Bundle.main.path(forResource: l, ofType: "lproj")
         if path == nil {
             //in case the language does not exists

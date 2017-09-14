@@ -44,7 +44,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func initrootView(){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let lvc: MainTabBarController? = storyboard.instantiateViewController(withIdentifier: "MainTabBarController") as? MainTabBarController
-        let navigation = UINavigationController(rootViewController: lvc!) 
+        let navigation = UINavigationController(rootViewController: lvc!)
+        
+        let dir = PPLocalization().getlanguageDirection()
+        if  dir == .leftToRight {
+            let semantic: UISemanticContentAttribute = .forceLeftToRight
+            UITabBar.appearance().semanticContentAttribute = semantic
+            UIView.appearance().semanticContentAttribute = semantic
+            UINavigationBar.appearance().semanticContentAttribute = semantic
+            navigation.navigationBar.semanticContentAttribute  = semantic
+        }
+        else {
+            let semantic: UISemanticContentAttribute = .forceRightToLeft
+            UITabBar.appearance().semanticContentAttribute = semantic
+            UIView.appearance().semanticContentAttribute = semantic
+            UINavigationBar.appearance().semanticContentAttribute = semantic
+            navigation.navigationBar.semanticContentAttribute  = semantic
+        }
+
         navigation.navigationBar.isHidden = false
         window?.rootViewController = navigation
     }
