@@ -89,12 +89,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PoL-oK-nnm">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PoL-oK-nnm" customClass="PPButton" customModule="localizationDemo" customModuleProvider="target">
                                 <rect key="frame" x="50" y="154" width="30" height="30"/>
                                 <state key="normal" title="next"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="l10nTitle" value="next"/>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="SIT-jY-8Xi" kind="push" id="21O-eI-mtZ"/>
                                 </connections>

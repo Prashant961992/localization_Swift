@@ -29,20 +29,7 @@ class Item1ViewController: UIViewController {
         UITabBar.appearance().semanticContentAttribute = semantic
         UIView.appearance().semanticContentAttribute = semantic
         UINavigationBar.appearance().semanticContentAttribute = semantic
-       // UIButton.appearance().semanticContentAttribute = semantic
-//        if let navigationController = self.navigationController?.storyboard?.instantiateInitialViewController() as? UINavigationController {
-//            navigationController.setViewControllers(
-//                self.navigationController?.viewControllers.map {
-//                    if let storyboard = $0.storyboard, let identifier = $0.restorationIdentifier {
-//                        return storyboard.instantiateViewController(withIdentifier: identifier)
-//                    }
-//                    return $0
-//                    } ?? [],
-//                animated: false
-//            )
-//            navigationController.navigationBar.semanticContentAttribute = semantic
-//            UIApplication.shared.keyWindow?.rootViewController = navigationController
-//        }
+        appDelegate.initrootView()
     }
 
     @IBAction func actionenglish(_ sender: Any) {
