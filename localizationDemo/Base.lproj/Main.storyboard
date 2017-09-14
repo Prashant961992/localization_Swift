@@ -158,10 +158,10 @@
             </objects>
             <point key="canvasLocation" x="-591" y="134"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar Controller-->
         <scene sceneID="OMa-7S-C3p">
             <objects>
-                <tabBarController id="FtG-84-row" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FtG-84-row" customClass="MainTabBarController" customModule="localizationDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="w30-5b-tsH"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="qN1-H6-sAM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>

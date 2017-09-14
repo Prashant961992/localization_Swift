@@ -41,8 +41,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-    func initrootView() -> Void {
-        
+    func initrootView(){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let lvc: MainTabBarController? = storyboard.instantiateViewController(withIdentifier: "MainTabBarController") as? MainTabBarController
+        let navigation = UINavigationController(rootViewController: lvc!) 
+        navigation.navigationBar.isHidden = false
+        window?.rootViewController = navigation
     }
 }
 
